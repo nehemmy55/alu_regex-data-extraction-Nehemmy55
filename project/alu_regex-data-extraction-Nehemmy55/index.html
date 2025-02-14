@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Regex Extractor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h2>Simple Data Extractor</h2>
+
+    <label>Enter Text:</label>
+    <textarea id="textInput" placeholder="Paste your text here..."></textarea>
+
+    <label>Select Data Type:</label>
+    <select id="dataType">
+        <option value="email">Email Addresses</option>
+        <option value="url">URLs</option>
+        <option value="phone">Phone Numbers</option>
+        <option value="creditCard">Credit Card Numbers</option>
+    </select>
+
+    <button onclick="extractData()">Extract</button>
+
+    <h3>Results:</h3>
+    <div id="result"></div>
+
+    <script src="index.js"></script>
+
+</body>
+</html>
